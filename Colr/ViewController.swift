@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func tapButton() {
+        let vc = AMColorPickerViewController.init(nibName: "AMColorPickerViewController", bundle: nil)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
 
 }
 
