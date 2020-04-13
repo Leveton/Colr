@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func tapButton() {
+        performSegue(withIdentifier: "VCToSwift", sender: self)
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SwiftColorWheelViewController {
+            vc.modalPresentationStyle = .fullScreen
+        }
+    }
 }
 

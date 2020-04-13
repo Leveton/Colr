@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,85 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-ea-g4K">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYP-io-Ndc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="VbG-zE-wDw" kind="presentation" identifier="VCToSwift" id="LE5-Wh-Tcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="232" y="139"/>
+        </scene>
+        <!--Swift Color Wheel View Controller-->
+        <scene sceneID="4vC-Ao-HdX">
+            <objects>
+                <viewController id="VbG-zE-wDw" customClass="SwiftColorWheelViewController" customModule="Colr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTX-0m-vLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iyP-Hi-0h0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="772"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc3-zf-Jgv" userLabel="Standard Color Wheel" customClass="ColorWheel" customModule="Colr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="386"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xc3-zf-Jgv" secondAttribute="height" multiplier="1:1" priority="900" id="Ocl-YF-3kz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewr-N7-QpD" userLabel="Rotating Color Wheel Flowery" customClass="RotatingColorWheel" customModule="Colr">
+                                        <rect key="frame" x="0.0" y="386" width="414" height="386"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ewr-N7-QpD" secondAttribute="height" multiplier="1:1" priority="900" id="0sh-Lu-rHo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="rotate lower wheel to change brightness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I80-fm-dzm" userLabel="rotate lower wheel to change brightness">
+                                <rect key="frame" x="10" y="782" width="394" height="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iyP-Hi-0h0" firstAttribute="leading" secondItem="MVH-a5-ee7" secondAttribute="leading" id="HWT-5T-Z7E"/>
+                            <constraint firstItem="iyP-Hi-0h0" firstAttribute="trailing" secondItem="MVH-a5-ee7" secondAttribute="trailing" id="Jr8-IE-zAc"/>
+                            <constraint firstItem="I80-fm-dzm" firstAttribute="top" secondItem="iyP-Hi-0h0" secondAttribute="bottom" constant="10" id="Rny-ph-tiU"/>
+                            <constraint firstItem="MVH-a5-ee7" firstAttribute="bottom" secondItem="I80-fm-dzm" secondAttribute="bottom" constant="10" id="YM3-pz-Nwq"/>
+                            <constraint firstItem="I80-fm-dzm" firstAttribute="leading" secondItem="fTX-0m-vLP" secondAttribute="leading" constant="10" id="q2E-iz-iQf"/>
+                            <constraint firstAttribute="trailing" secondItem="I80-fm-dzm" secondAttribute="trailing" constant="10" id="spT-sO-0Cm"/>
+                            <constraint firstItem="iyP-Hi-0h0" firstAttribute="top" secondItem="MVH-a5-ee7" secondAttribute="top" id="stE-3k-RwF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MVH-a5-ee7"/>
+                    </view>
+                    <connections>
+                        <outlet property="rotatingWheel" destination="Ewr-N7-QpD" id="4XT-DW-k4u"/>
+                        <outlet property="standardWheel" destination="Xc3-zf-Jgv" id="pwS-Ph-tiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtH-XG-mB4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="139"/>
         </scene>
     </scenes>
 </document>

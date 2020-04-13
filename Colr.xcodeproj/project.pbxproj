@@ -16,6 +16,11 @@
 		07EA0D15244503F200D97A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA0D13244503F200D97A64 /* LaunchScreen.storyboard */; };
 		07EA0D20244503F200D97A64 /* ColrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D1F244503F200D97A64 /* ColrTests.swift */; };
 		07EA0D2B244503F200D97A64 /* ColrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D2A244503F200D97A64 /* ColrUITests.swift */; };
+		07EA0D6124451D4A00D97A64 /* DefaultWheelGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D5B24451D4A00D97A64 /* DefaultWheelGestureHandler.swift */; };
+		07EA0D6224451D4A00D97A64 /* ColorWheelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D5C24451D4A00D97A64 /* ColorWheelLayer.swift */; };
+		07EA0D6324451D4A00D97A64 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D5D24451D4A00D97A64 /* ColorWheel.swift */; };
+		07EA0D6424451D4A00D97A64 /* RotatingColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D5E24451D4A00D97A64 /* RotatingColorWheel.swift */; };
+		07EA0D6724451D7300D97A64 /* SwiftColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D6624451D7300D97A64 /* SwiftColorWheelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		07EA0D26244503F200D97A64 /* ColrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EA0D2A244503F200D97A64 /* ColrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColrUITests.swift; sourceTree = "<group>"; };
 		07EA0D2C244503F200D97A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EA0D5B24451D4A00D97A64 /* DefaultWheelGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultWheelGestureHandler.swift; sourceTree = "<group>"; };
+		07EA0D5C24451D4A00D97A64 /* ColorWheelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheelLayer.swift; sourceTree = "<group>"; };
+		07EA0D5D24451D4A00D97A64 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		07EA0D5E24451D4A00D97A64 /* RotatingColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatingColorWheel.swift; sourceTree = "<group>"; };
+		07EA0D5F24451D4A00D97A64 /* SwiftColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftColorWheel.h; sourceTree = "<group>"; };
+		07EA0D6624451D7300D97A64 /* SwiftColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftColorWheelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +115,13 @@
 				07EA0D05244503EE00D97A64 /* AppDelegate.swift */,
 				07EA0D07244503EE00D97A64 /* SceneDelegate.swift */,
 				07EA0D09244503EE00D97A64 /* ViewController.swift */,
+				07EA0D6624451D7300D97A64 /* SwiftColorWheelViewController.swift */,
 				07EA0D0B244503EE00D97A64 /* Main.storyboard */,
 				07EA0D11244503F200D97A64 /* Assets.xcassets */,
 				07EA0D13244503F200D97A64 /* LaunchScreen.storyboard */,
 				07EA0D16244503F200D97A64 /* Info.plist */,
 				07EA0D0E244503EE00D97A64 /* Colr.xcdatamodeld */,
+				07EA0D5A24451D4A00D97A64 /* SwiftColorWheel */,
 			);
 			path = Colr;
 			sourceTree = "<group>";
@@ -129,6 +142,18 @@
 				07EA0D2C244503F200D97A64 /* Info.plist */,
 			);
 			path = ColrUITests;
+			sourceTree = "<group>";
+		};
+		07EA0D5A24451D4A00D97A64 /* SwiftColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				07EA0D5B24451D4A00D97A64 /* DefaultWheelGestureHandler.swift */,
+				07EA0D5C24451D4A00D97A64 /* ColorWheelLayer.swift */,
+				07EA0D5D24451D4A00D97A64 /* ColorWheel.swift */,
+				07EA0D5E24451D4A00D97A64 /* RotatingColorWheel.swift */,
+				07EA0D5F24451D4A00D97A64 /* SwiftColorWheel.h */,
+			);
+			path = SwiftColorWheel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EA0D0A244503EE00D97A64 /* ViewController.swift in Sources */,
+				07EA0D6124451D4A00D97A64 /* DefaultWheelGestureHandler.swift in Sources */,
 				07EA0D10244503EE00D97A64 /* Colr.xcdatamodeld in Sources */,
 				07EA0D06244503EE00D97A64 /* AppDelegate.swift in Sources */,
+				07EA0D6324451D4A00D97A64 /* ColorWheel.swift in Sources */,
 				07EA0D08244503EE00D97A64 /* SceneDelegate.swift in Sources */,
+				07EA0D6724451D7300D97A64 /* SwiftColorWheelViewController.swift in Sources */,
+				07EA0D6224451D4A00D97A64 /* ColorWheelLayer.swift in Sources */,
+				07EA0D6424451D4A00D97A64 /* RotatingColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
