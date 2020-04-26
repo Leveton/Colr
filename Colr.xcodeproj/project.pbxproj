@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074D376B245541CB0096F9AA /* ColorPicker+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3763245541CB0096F9AA /* ColorPicker+Math.swift */; };
+		074D376C245541CB0096F9AA /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3764245541CB0096F9AA /* ColorPickerView.swift */; };
+		074D376D245541CB0096F9AA /* AngleGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3765245541CB0096F9AA /* AngleGradientLayer.swift */; };
+		074D376E245541CB0096F9AA /* ColorApplyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3766245541CB0096F9AA /* ColorApplyButton.swift */; };
+		074D376F245541CB0096F9AA /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3767245541CB0096F9AA /* ThumbView.swift */; };
+		074D3770245541CB0096F9AA /* CGRect+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3768245541CB0096F9AA /* CGRect+Core.swift */; };
+		074D3771245541CB0096F9AA /* ColorLightingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3769245541CB0096F9AA /* ColorLightingPicker.swift */; };
+		074D3772245541CB0096F9AA /* HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D376A245541CB0096F9AA /* HSB.swift */; };
+		074D3774245542270096F9AA /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D3773245542270096F9AA /* ColorPickerController.swift */; };
 		07EA0D06244503EE00D97A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D05244503EE00D97A64 /* AppDelegate.swift */; };
 		07EA0D08244503EE00D97A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D07244503EE00D97A64 /* SceneDelegate.swift */; };
 		07EA0D0A244503EE00D97A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA0D09244503EE00D97A64 /* ViewController.swift */; };
@@ -36,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074D3763245541CB0096F9AA /* ColorPicker+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorPicker+Math.swift"; sourceTree = "<group>"; };
+		074D3764245541CB0096F9AA /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		074D3765245541CB0096F9AA /* AngleGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientLayer.swift; sourceTree = "<group>"; };
+		074D3766245541CB0096F9AA /* ColorApplyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorApplyButton.swift; sourceTree = "<group>"; };
+		074D3767245541CB0096F9AA /* ThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		074D3768245541CB0096F9AA /* CGRect+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Core.swift"; sourceTree = "<group>"; };
+		074D3769245541CB0096F9AA /* ColorLightingPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLightingPicker.swift; sourceTree = "<group>"; };
+		074D376A245541CB0096F9AA /* HSB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSB.swift; sourceTree = "<group>"; };
+		074D3773245542270096F9AA /* ColorPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		07EA0D02244503EE00D97A64 /* Colr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EA0D05244503EE00D97A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07EA0D07244503EE00D97A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074D3762245541CB0096F9AA /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				074D3763245541CB0096F9AA /* ColorPicker+Math.swift */,
+				074D3764245541CB0096F9AA /* ColorPickerView.swift */,
+				074D3765245541CB0096F9AA /* AngleGradientLayer.swift */,
+				074D3766245541CB0096F9AA /* ColorApplyButton.swift */,
+				074D3767245541CB0096F9AA /* ThumbView.swift */,
+				074D3768245541CB0096F9AA /* CGRect+Core.swift */,
+				074D3769245541CB0096F9AA /* ColorLightingPicker.swift */,
+				074D376A245541CB0096F9AA /* HSB.swift */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 		07EA0CF9244503EE00D97A64 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +137,13 @@
 				07EA0D05244503EE00D97A64 /* AppDelegate.swift */,
 				07EA0D07244503EE00D97A64 /* SceneDelegate.swift */,
 				07EA0D09244503EE00D97A64 /* ViewController.swift */,
+				074D3773245542270096F9AA /* ColorPickerController.swift */,
 				07EA0D0B244503EE00D97A64 /* Main.storyboard */,
 				07EA0D11244503F200D97A64 /* Assets.xcassets */,
 				07EA0D13244503F200D97A64 /* LaunchScreen.storyboard */,
 				07EA0D16244503F200D97A64 /* Info.plist */,
 				07EA0D0E244503EE00D97A64 /* Colr.xcdatamodeld */,
+				074D3762245541CB0096F9AA /* ios */,
 			);
 			path = Colr;
 			sourceTree = "<group>";
@@ -264,8 +299,17 @@
 			files = (
 				07EA0D0A244503EE00D97A64 /* ViewController.swift in Sources */,
 				07EA0D10244503EE00D97A64 /* Colr.xcdatamodeld in Sources */,
+				074D376E245541CB0096F9AA /* ColorApplyButton.swift in Sources */,
+				074D376D245541CB0096F9AA /* AngleGradientLayer.swift in Sources */,
+				074D376F245541CB0096F9AA /* ThumbView.swift in Sources */,
+				074D376C245541CB0096F9AA /* ColorPickerView.swift in Sources */,
 				07EA0D06244503EE00D97A64 /* AppDelegate.swift in Sources */,
+				074D3774245542270096F9AA /* ColorPickerController.swift in Sources */,
 				07EA0D08244503EE00D97A64 /* SceneDelegate.swift in Sources */,
+				074D3770245541CB0096F9AA /* CGRect+Core.swift in Sources */,
+				074D3772245541CB0096F9AA /* HSB.swift in Sources */,
+				074D3771245541CB0096F9AA /* ColorLightingPicker.swift in Sources */,
+				074D376B245541CB0096F9AA /* ColorPicker+Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
